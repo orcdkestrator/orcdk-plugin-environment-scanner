@@ -68,7 +68,7 @@ describe('EnvironmentScannerPlugin Unit Tests', () => {
 
   describe('plugin metadata', () => {
     it('should have correct name', () => {
-      expect(plugin.name).toBe('@orcdkestrator/environment-scanner');
+      expect(plugin.name).toBe('@orcdkestrator/orcdk-plugin-environment-scanner');
     });
 
     it('should have a version', () => {

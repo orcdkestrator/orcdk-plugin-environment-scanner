@@ -32,4 +32,10 @@ describe('EnvironmentScannerPlugin', () => {
   it('should be defined', () => {
     expect(plugin).toBeDefined();
   });
+
+  it('should initialize successfully', async () => {
+    await expect(plugin.initialize(mockConfig, mockOrcdkConfig)).resolves.not.toThrow();
+    expect(plugin.name).toBe('@orcdkestrator/orcdk-plugin-environment-scanner');
+    expect(plugin.version).toBeDefined();
+  });
 });
