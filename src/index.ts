@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { Plugin, PluginConfig, OrcdkConfig, EnvironmentConfig, EventBus, OrcdkEvent, EventTypes } from '@orcdkestrator/core';
 import * as fs from 'fs';
 import * as path from 'path';
