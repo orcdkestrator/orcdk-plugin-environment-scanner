@@ -26,7 +26,7 @@ describe('EnvironmentScannerPlugin', () => {
   });
 
   it('should have correct name', () => {
-    expect(plugin.name).toBe('environment-scanner');
+    expect(plugin.name).toBe('@orcdkestrator/orcdk-plugin-environment-scanner');
   });
 
   it('should be defined', () => {

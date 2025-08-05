@@ -5,10 +5,6 @@ import * as path from 'path';
 import { prompt } from 'enquirer';
 import { glob } from 'glob';
 
-// Read version from package.json
-const packageJsonPath = path.join(__dirname, '../..', 'package.json');
-const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
-
 interface EnvironmentScannerConfig {
   scanPaths?: string[];
   filePatterns?: string[];
@@ -28,8 +24,8 @@ interface EnvironmentChanges {
  * Automatically discovers environments from various sources
  */
 export class EnvironmentScannerPlugin implements Plugin {
-  public readonly name = '@orcdkestrator/environment-scanner';
-  public readonly version = packageJson.version;
+  public readonly name = '@orcdkestrator/orcdk-plugin-environment-scanner';
+  public readonly version = '1.0.0';
   
   private eventBus!: EventBus;
   private config: EnvironmentScannerConfig = {};
